@@ -1,0 +1,37 @@
+{
+  "name": "express-metric-logger",
+  "version": "0.0.1",
+  "description": "Express based middleware to implement metics collection logging",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "mocha -R spec -b test/tests.js"
+  },
+  "keywords": [
+    "Express",
+    "metrics",
+    "audit",
+    "insights"
+  ],
+  "author": "Marco Villarreal <erick.slayer.m.v@gmail.com> (https://github.com/mvillarrealb)",
+  "license": "MIT",
+  "homepage": "https://github.com/mvillarrealb/express-metric-logger",
+  "repository": "git://github.com/mvillarrealb/express-metric-logger",
+  "engines": {
+    "node": ">= 6.4.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-useragent": "^1.0.4",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.7.6",
+    "superagent": "^3.3.1"
+  }
+}
