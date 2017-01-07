@@ -23,6 +23,22 @@ express-metric-logger has simple configurations here are the available options:
 
 * *persist*(function): A function used by the middleware to persist your logging activity, this function can be synchronous or asynchronous, the logger will not wait for you he will simply delegate the task to you and assume that everything is fancy and nice.
 
+## Captured metric
+The structure of the generated metric is as follows:
+
+Field | Description
+--- | ---
+endpoint|The endpoint visited
+api_method | The http method (POST, GET ,PUT, DELETE)
+response_code | The http response code sent by the server
+browser| The browser which send the request
+version| The browser version
+operating_system| Operating system which sent the request
+is_desktop| If the request was from a desktop
+is_mobile | If the request was from a mobile device
+is_bot | If the request was from a bot
+processing_time | Time expent in processing your request
+capture_stamp| Date of the metrics capture
 _____
 
 # Usage
